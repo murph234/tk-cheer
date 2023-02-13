@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # SPDX-FileCopyrightText: 2023 Chris Murphy
 # SPDX-License-Identifier: MIT
 #
@@ -5,7 +7,6 @@
 # are published.  Uses the MQTT broker run by Cheerlights.
 #
 
-#!/usr/bin/env python
 #
 # Import libraries
 from tkinter import *
@@ -56,7 +57,7 @@ mqttc.on_subscribe = on_subscribe
 mqttc.connect(mqttHost, 1883, 60)
 
 # Start MQTT and Tk loops
-qttc.loop_start()
+mqttc.loop_start()
 root.mainloop()
 
 
